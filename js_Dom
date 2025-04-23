@@ -1,0 +1,60 @@
+HTML: 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="mainHeading">Original Heading</h1>
+
+  <button id="myButton">Click Me</button>
+
+  <div class="text">
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+---
+CSS: 
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#myButton {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.text p {
+  color: gray;
+  margin: 5px 0;
+}
+
+---
+JS:
+\
+// Change the h1 text
+document.getElementById("mainHeading").innerText = "🔥 DOM is Lit 🔥";
+
+// Change the button color
+document.getElementById("myButton").style.backgroundColor = "red";
+
+// Change the color of all <p> tags inside the .text div
+const paragraphs = document.querySelectorAll(".text p");
+paragraphs.forEach(p => {
+  p.style.color = "blue";
+});
+
