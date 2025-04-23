@@ -1,0 +1,68 @@
+Q1: make a box with name: 
+
+code: html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Md Nayeem Ahmed</h1>
+    </div>
+</body>
+</html>
+
+and: css
+
+.container{
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+Q2: finding even odd by js:
+
+let x = [3, 8,5,12,7];
+for(i=0; i<x.length; i++){
+ if(x[i]%2 ==0){
+    console.log("Even Number: ", x[i])
+ }else{
+    console.log("Odd Number: ",x[i])
+ }
+}
+
+Q3: DOM Manipulation: 
+
+code: html: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Say Hello</h2>
+<input type="text" id="nameInput" placeholder="Enter Your Name">
+<button id="helloButton">Say Hello</button>
+<p id="greeting"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+code: js: 
+document.getElementById("greeting").innerText = "Hello Bro";
+
+
+
